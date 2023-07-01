@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#EFEFF1">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/custom_bg"
+        android:gravity="center"
+        android:translationY="-30dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/location_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/address"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:textStyle="bold"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <EditText
+                android:id="@+id/house"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:hint="House No."
+                android:maxLines="1"
+                android:textColorHint="#9F9F9F"
+                android:inputType="none"
+                android:paddingStart="15dp"
+                android:textSize="16sp"
+                android:backgroundTint="#9F9F9F"
+                android:fontFamily="@font/montserrat_regular"/>
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="5dp" />
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:hint="City"
+                android:maxLines="1"
+                android:inputType="text"
+                android:textColorHint="#9F9F9F"
+                android:paddingStart="15dp"
+                android:textSize="16sp"
+                android:backgroundTint="#9F9F9F"
+                android:fontFamily="@font/montserrat_regular" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <EditText
+                android:id="@+id/state"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:hint="State"
+                android:textColorHint="#9F9F9F"
+                android:maxLines="1"
+                android:inputType="text"
+                android:paddingStart="15dp"
+                android:textSize="16sp"
+                android:backgroundTint="#9F9F9F"
+                android:fontFamily="@font/montserrat_regular" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="5dp" />
+
+            <EditText
+                android:id="@+id/pincode"
+                android:layout_width="130dp"
+                android:layout_height="43dp"
+                android:hint="Pincode"
+                android:textColorHint="#9F9F9F"
+                android:maxLines="1"
+                android:inputType="number"
+                android:paddingStart="15dp"
+                android:textSize="16sp"
+                android:backgroundTint="#9F9F9F"
+                android:fontFamily="@font/montserrat_regular" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    //
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/custom_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/car_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/car_mfg"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/mfgName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Company"
+            android:textColorHint="#9F9F9F"
+            android:paddingStart="15dp"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textSize="16sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="#9F9F9F"
+            android:fontFamily="@font/montserrat_regular" />
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout54"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/custom_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="0.0"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/car_model_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/car_model"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/modelName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Model"
+            android:textColorHint="#9F9F9F"
+            android:paddingStart="15dp"
+            android:textSize="16sp"
+            android:inputType="text"
+            android:maxLines="1"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="#9F9F9F"
+            android:fontFamily="@font/montserrat_regular" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/custom_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout54"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/calender_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/car_year"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/mfgYear"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Year"
+                android:textColorHint="#9F9F9F"
+                android:textSize="16sp"
+                android:maxLines="1"
+                android:inputType="number"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="#9F9F9F"
+                android:fontFamily="@font/montserrat_regular" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/custom_btn"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout10" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

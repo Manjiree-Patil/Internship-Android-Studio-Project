@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">AutoSprings</string>
+
+    <string name="first_name">First name <font color='#FF0000'>*</font></string>
+    <string name="last_name">Last name <font color='#FF0000'>*</font></string>
+    <string name="mobile_number">Mobile Number <font color='#FF0000'>*</font></string>
+    <string name="email_id">Email ID <font color='#FF0000'>*</font></string>
+
+    <string name="address">Address <font color='#FF0000'>*</font></string>
+    <string name="car_mfg">Car Manufacturer <font color='#FF0000'>*</font></string>
+    <string name="car_model">Car Model <font color='#FF0000'>*</font></string>
+    <string name="car_year">Year of Manufacturer <font color='#FF0000'>*</font></string>
+
+</resources>
